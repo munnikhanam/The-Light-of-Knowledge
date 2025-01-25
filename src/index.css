@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark, dark;
+}
+@theme {
+  --font-work: "Work Sans", serif;
+  --font-tittle: "Playfair Display", serif;
+}

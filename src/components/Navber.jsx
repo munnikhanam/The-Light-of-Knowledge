@@ -32,7 +32,7 @@ const Navber = () => {
               <NavLink to="/listedBooks">ListedBooks</NavLink>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">The Light Of Knowledge</a>
+          <a className="btn btn-ghost text-xl">✨ The Light Of Knowledge 📚</a>
         </div>
         <div className="navbar-center hidden lg:flex gap-5">
           <ul className="menu menu-horizontal px-1 gap-5 ">

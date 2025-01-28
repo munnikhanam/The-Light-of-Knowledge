@@ -1,3 +1,5 @@
+import { toast } from "react-toastify";
+
 const getStoreReadList = () => {
   // read list
   const storedListStr = localStorage.getItem("read-list");
@@ -16,6 +18,7 @@ const addToStoredReadList = (id) => {
     storedList.push(id);
     const storedListStr = JSON.stringify(storedList);
     localStorage.setItem("read-list", storedListStr);
+    toast("Congratulation! you have added book in your list");
   }
 };
 
@@ -39,6 +42,7 @@ const addToWishList = (id) => {
     storedWish.push(id);
     const storedWishStr = JSON.stringify(storedWish);
     localStorage.setItem("wish-list", storedWishStr);
+    toast("Congratulation! you have added book in your Wishlist");
   }
 };
 export {

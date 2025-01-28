@@ -7,7 +7,7 @@
 
 # ✨ The Light Of Knowledge📚
 ### 🔗 Github Link : ( https://munnikhanam.github.io/The-Light-of-Knowledge/)
-### 🔗 Netlify Live Link: https://organicfoodshopapp.netlify.app/
+### 🔗 Netlify Live Link: https://thelightofknowledge.netlify.app/
 
 
 

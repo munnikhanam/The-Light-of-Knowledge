@@ -1,5 +1,7 @@
+import { useNavigate } from "react-router";
 import books from "../assets/books.jpg";
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <div className="hero bg-base-200 min-h-screen">
@@ -15,7 +17,12 @@ const Banner = () => {
               treasure in books than in all the pirate's loot on Treasure
               Island.” - Walt Disney
             </p>
-            <button className="btn bg-[#23BE0A] my-5">View The List</button>
+            <button
+              onClick={() => navigate("/allBooks")}
+              className="btn bg-[#23BE0A] my-5"
+            >
+              View The List
+            </button>
           </div>
         </div>
       </div>

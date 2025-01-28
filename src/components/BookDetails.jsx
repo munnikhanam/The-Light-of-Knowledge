@@ -6,7 +6,17 @@ const BookDetails = () => {
   const id = parseInt(bookId);
   const data = useLoaderData();
   const findingBook = [...data].find((book) => book.bookId === id);
-  const { bookName, author, tags, category, image, rating } = findingBook;
+
+  const {
+    bookName,
+    author,
+    tags,
+    category,
+    image,
+    rating,
+    review,
+    totalPages,
+  } = findingBook;
   // handle function
   const markAsRead = (id) => {
     addToStoredReadList(id);
@@ -36,10 +46,13 @@ const BookDetails = () => {
             <p className="my-3 font-work  font-medium text-[#131313CC]">
               By: {author}
             </p>
+            <p className="my-3 font-work  font-medium text-[#131313CC]">
+              Pages: {totalPages} 📄
+            </p>
           </div>
 
           <div className="flex justify-between font-work  font-medium text-[#131313CC]">
-            <p>{category}</p>
+            <p>Category: {category}</p>
             <div className="flex items-center gap-2">
               {rating}
               <div className="rating mr-2.5">
@@ -51,6 +64,7 @@ const BookDetails = () => {
               </div>
             </div>
           </div>
+          <p className="text-xl ">🤩 Review:{review}</p>
         </div>
       </div>
       <div className="flex gap-5 my-5">

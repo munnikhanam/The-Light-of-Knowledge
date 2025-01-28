@@ -29,15 +29,17 @@ const Navber = () => {
               <NavLink to="/">Home</NavLink>
               <NavLink to="/about">About</NavLink>
               <NavLink to="/allbooks">AllBooks</NavLink>
+              <NavLink to="/listedBooks">ListedBooks</NavLink>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl">The Light Of Knowledge</a>
         </div>
-        <div className="navbar-center hidden lg:flex">
+        <div className="navbar-center hidden lg:flex gap-5">
           <ul className="menu menu-horizontal px-1">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about">About</NavLink>
             <NavLink to="/allbooks">AllBooks</NavLink>
+            <NavLink to="/listedBooks">ListedBooks</NavLink>
           </ul>
         </div>
         <div className="navbar-end">

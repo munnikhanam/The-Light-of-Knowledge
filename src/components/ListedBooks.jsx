@@ -24,7 +24,6 @@ const ListedBooks = () => {
   }, []);
   return (
     <div>
-      ListedBooks
       <Tabs>
         <TabList>
           <Tab>Read List</Tab>
@@ -32,13 +31,15 @@ const ListedBooks = () => {
         </TabList>
 
         <TabPanel>
-          <h2 className="text-2xl">Books I Read :{readList.length}</h2>
+          <h2 className="text-2xl text-center my-10">
+            Books I have Read :{readList.length}
+          </h2>
           {readList.map((book) => (
             <Books key={book.bookId} book={book} />
           ))}
         </TabPanel>
         <TabPanel>
-          <h2 className="text-2xl">
+          <h2 className="text-2xl text-center my-10">
             Books I Wanted To Read: {wishList.length}
           </h2>
           {wishList.map((book) => (

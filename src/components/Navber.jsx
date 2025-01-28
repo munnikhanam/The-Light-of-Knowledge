@@ -35,11 +35,19 @@ const Navber = () => {
           <a className="btn btn-ghost text-xl">The Light Of Knowledge</a>
         </div>
         <div className="navbar-center hidden lg:flex gap-5">
-          <ul className="menu menu-horizontal px-1">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/allbooks">AllBooks</NavLink>
-            <NavLink to="/listedBooks">ListedBooks</NavLink>
+          <ul className="menu menu-horizontal px-1 gap-5 ">
+            <NavLink className={`btn btn-accent`} to="/">
+              Home
+            </NavLink>
+            <NavLink className={`btn btn-accent`} to="/about">
+              About
+            </NavLink>
+            <NavLink className={`btn btn-accent`} to="/allbooks">
+              AllBooks
+            </NavLink>
+            <NavLink className={`btn btn-accent`} to="/listedBooks">
+              ListedBooks
+            </NavLink>
           </ul>
         </div>
         <div className="navbar-end">

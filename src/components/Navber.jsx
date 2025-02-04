@@ -36,22 +36,22 @@ const Navber = () => {
         </div>
         <div className="navbar-center hidden lg:flex gap-5">
           <ul className="menu menu-horizontal px-1 gap-5 ">
-            <NavLink className={`btn btn-accent`} to="/">
+            <NavLink className={`btn bg-[#23BE0A]`} to="/">
               Home
             </NavLink>
-            <NavLink className={`btn btn-accent`} to="/about">
+            <NavLink className={`btn bg-[#23BE0A]`} to="/about">
               About
             </NavLink>
-            <NavLink className={`btn btn-accent`} to="/allbooks">
+            <NavLink className={`btn bg-[#23BE0A]`} to="/allbooks">
               AllBooks
             </NavLink>
-            <NavLink className={`btn btn-accent`} to="/listedBooks">
+            <NavLink className={`btn bg-[#23BE0A]`} to="/listedBooks">
               ListedBooks
             </NavLink>
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn btn-accent">Button</a>
+          <a className="btn bg-[#23BE0A]">Button</a>
         </div>
       </div>
     </div>
